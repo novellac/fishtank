@@ -1,0 +1,8 @@
+{
+  "name": "fishtank",
+  "version": "1.0.0",
+  "description": "a calming CSS fish tank",
+  "repository": "https://github.com/novellac/fishtank.git",
+  "author": "novellac <38117965+novellac@users.noreply.github.com>",
+  "license": "Hippocratic License"
+}
