@@ -9,6 +9,9 @@
 :root {
   --waves-height: 100px;
 
+  --black: black;
+  --white: white;
+
   --water-primary: lightblue;
   --water-secondary: teal;
   --water-tertiary: #00cccc;
@@ -28,6 +31,14 @@
 
   --sand-primary: #ffe4b5;
   --sand-secondary: #d2b48c;
+
+  --seaweed-primary: seagreen;
+  --seaweed-secondary: mediumseagreen;
+
+  --snail-primary: teal;
+  --snail-secondary: palegreen;
+  --snail-flesh-primary: #f4a460;
+  --snail-flesh-secondary: #bc8f8f;
 
   --fish-fins-index: 1;
   --fish-body-index: 2;
@@ -226,7 +237,7 @@ h1 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: black;
+  background: var(--black);
   position: absolute;
   top: 30px;
   left: 125px;
@@ -236,7 +247,7 @@ h1 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: white;
+  background: var(--white);
   margin: 3px 7px;
 }
 
@@ -326,9 +337,9 @@ h1 {
   transform: rotate(-50deg);
   background: linear-gradient(
     150deg,
-    seagreen 15%,
-    mediumseagreen 50%,
-    seagreen 80%
+    var(--seaweed-primary) 15%,
+    var(--seaweed-secondary) 50%,
+    var(--seaweed-primary) 80%
   );
 }
 
@@ -344,18 +355,19 @@ h1 {
 .snail {
   grid-area: 5/3/7/5;
   margin-left: 2rem;
+  margin-top: 2rem;
   position: relative;
   height: 10rem;
 }
 .snail .shell {
   z-index: 1;
   position: absolute;
-  border: 1px solid palegreen;
+  border: 1px solid var(--snail-secondary);
   height: 5rem;
   width: 5rem;
   left: 0.25rem;
   border-radius: 50%;
-  background: repeating-radial-gradient(teal, palegreen 25%);
+  background: repeating-radial-gradient(var(--snail-primary), var(--snail-secondary) 25%);
 }
 
 .snail .horn--left {
@@ -365,7 +377,7 @@ h1 {
   width: 0.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  box-shadow: 0px 8px 0px 4px #bc8f8f;
+  box-shadow: 0px 8px 0px 4px var(--snail-flesh-secondary);
   animation: snailHorns 4s infinite ease-out;
 }
 
@@ -386,7 +398,7 @@ h1 {
   height: 2.5rem;
   width: 2rem;
   border-radius: 50% 0 50%;
-  background: #f4a460;
+  background: var(--snail-flesh-primary);
   left: 5rem;
   top: 2rem;
   transform: rotate(25deg);
@@ -397,7 +409,7 @@ h1 {
   height: 2.5rem;
   position: absolute;
   top: 3rem;
-  background: #f4a460;
+  background: var(--snail-flesh-primary);
   border-radius: 50px 0;
 }
 
