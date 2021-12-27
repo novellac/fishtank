@@ -163,14 +163,14 @@ h1 {
 }
 
 .swimlane--one {
-  grid-area: 2/1/3/7;
+  grid-area: 2/1/4/7;
   overflow-x: hidden;
   min-height: 10rem;
 }
 
 .swimlane--one .fish {
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   animation: crossRight 20s linear infinite;
   animation-direction: alternate;
 }
@@ -208,7 +208,29 @@ h1 {
     var(--fish-one-primary),
     var(--fish-one-secondary)
   );
-  animation: tail1 2s infinite;
+  animation: fin 2s infinite;
+}
+
+@keyframes fin {
+  0%,
+  100% {
+    transform-origin: bottom center;
+    transform: rotateY(-19deg);
+    transform: rotateX(19deg);
+  }
+  20% {
+    transform-origin: bottom center;
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform-origin: bottom center;
+    transform: rotateX(19deg);
+    transform: rotateY(-19deg);
+  }
+  70% {
+    transform-origin: bottom center;
+    transform: rotateX(0deg);
+  }
 }
 
 .fish .body {
