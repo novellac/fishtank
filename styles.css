@@ -559,3 +559,13 @@ h1 {
       transparent 52%
     );
 }
+
+.description {
+  margin: 1rem auto;
+  max-width: 40rem;
+}
+
+.description h2 {
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
