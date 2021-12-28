@@ -565,6 +565,7 @@ h1 {
 
 .description {
   margin: 1rem auto;
+  padding: 0 1rem;
   max-width: 40rem;
 }
 
